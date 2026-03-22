@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/zed_firewall/ip/zed_firewall_rst_ps7_0_50M_0/sim/zed_firewall_rst_ps7_0_50M_0.vhd" \
+
+nosort
