@@ -1,0 +1,1408 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Mar 11 12:06:49 2026
+| Host         : GreatBhardwaj running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file zed_firewall_wrapper_timing_summary_routed.rpt -pb zed_firewall_wrapper_timing_summary_routed.pb -rpx zed_firewall_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : zed_firewall_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule  Severity  Description  Violations  
+----  --------  -----------  ----------  
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     13.645        0.000                      0                 1469        0.075        0.000                      0                 1469        9.020        0.000                       0                   666  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0         13.645        0.000                      0                 1469        0.075        0.000                      0                 1469        9.020        0.000                       0                   666  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                      clk_fpga_0    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.645ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.075ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.645ns  (required time - arrival time)
+  Source:                 zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        6.065ns  (logic 2.066ns (34.066%)  route 3.999ns (65.934%))
+  Logic Levels:           6  (CARRY4=1 LUT3=3 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.659ns = ( 22.659 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.700     2.994    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X28Y98         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y98         FDRE (Prop_fdre_C_Q)         0.419     3.413 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/Q
+                         net (fo=6, routed)           1.297     4.710    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/axlen_cnt_reg[3][11]
+    SLICE_X37Y94         LUT3 (Prop_lut3_I1_O)        0.299     5.009 f  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/FSM_sequential_state[1]_i_2/O
+                         net (fo=3, routed)           0.314     5.323    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/FSM_sequential_state_reg[1]_0
+    SLICE_X36Y96         LUT6 (Prop_lut6_I3_O)        0.124     5.447 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=30, routed)          0.797     6.244    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_0
+    SLICE_X38Y94         LUT3 (Prop_lut3_I2_O)        0.124     6.368 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/next_pending_r_i_3/O
+                         net (fo=15, routed)          0.860     7.229    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/next
+    SLICE_X34Y93         LUT4 (Prop_lut4_I3_O)        0.124     7.353 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[3]_i_9/O
+                         net (fo=1, routed)           0.000     7.353    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3][1]
+    SLICE_X34Y93         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     7.996 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3]_i_2/O[3]
+                         net (fo=1, routed)           0.730     8.726    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[3]
+    SLICE_X34Y94         LUT3 (Prop_lut3_I0_O)        0.333     9.059 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[3]_i_1/O
+                         net (fo=1, routed)           0.000     9.059    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/p_1_in[3]
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.480    22.659    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[3]/C
+                         clock pessimism              0.229    22.888    
+                         clock uncertainty           -0.302    22.586    
+    SLICE_X34Y94         FDRE (Setup_fdre_C_D)        0.118    22.704    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[3]
+  -------------------------------------------------------------------
+                         required time                         22.704    
+                         arrival time                          -9.059    
+  -------------------------------------------------------------------
+                         slack                                 13.645    
+
+Slack (MET) :             13.764ns  (required time - arrival time)
+  Source:                 zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.946ns  (logic 1.849ns (31.097%)  route 4.097ns (68.903%))
+  Logic Levels:           6  (CARRY4=1 LUT3=3 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.659ns = ( 22.659 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.700     2.994    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X28Y98         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y98         FDRE (Prop_fdre_C_Q)         0.419     3.413 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/Q
+                         net (fo=6, routed)           1.297     4.710    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/axlen_cnt_reg[3][11]
+    SLICE_X37Y94         LUT3 (Prop_lut3_I1_O)        0.299     5.009 f  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/FSM_sequential_state[1]_i_2/O
+                         net (fo=3, routed)           0.314     5.323    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/FSM_sequential_state_reg[1]_0
+    SLICE_X36Y96         LUT6 (Prop_lut6_I3_O)        0.124     5.447 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=30, routed)          0.797     6.244    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_0
+    SLICE_X38Y94         LUT3 (Prop_lut3_I2_O)        0.124     6.368 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/next_pending_r_i_3/O
+                         net (fo=15, routed)          0.863     7.232    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/next
+    SLICE_X34Y93         LUT4 (Prop_lut4_I3_O)        0.124     7.356 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[3]_i_10/O
+                         net (fo=1, routed)           0.000     7.356    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3][0]
+    SLICE_X34Y93         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.427     7.783 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3]_i_2/O[1]
+                         net (fo=1, routed)           0.825     8.608    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[1]
+    SLICE_X34Y94         LUT3 (Prop_lut3_I0_O)        0.332     8.940 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[1]_i_1/O
+                         net (fo=1, routed)           0.000     8.940    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/p_1_in[1]
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.480    22.659    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[1]/C
+                         clock pessimism              0.229    22.888    
+                         clock uncertainty           -0.302    22.586    
+    SLICE_X34Y94         FDRE (Setup_fdre_C_D)        0.118    22.704    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[1]
+  -------------------------------------------------------------------
+                         required time                         22.704    
+                         arrival time                          -8.940    
+  -------------------------------------------------------------------
+                         slack                                 13.764    
+
+Slack (MET) :             14.004ns  (required time - arrival time)
+  Source:                 zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.669ns  (logic 1.969ns (34.731%)  route 3.700ns (65.269%))
+  Logic Levels:           6  (CARRY4=1 LUT3=3 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.659ns = ( 22.659 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.700     2.994    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X28Y98         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y98         FDRE (Prop_fdre_C_Q)         0.419     3.413 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[39]/Q
+                         net (fo=6, routed)           1.297     4.710    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/axlen_cnt_reg[3][11]
+    SLICE_X37Y94         LUT3 (Prop_lut3_I1_O)        0.299     5.009 f  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/FSM_sequential_state[1]_i_2/O
+                         net (fo=3, routed)           0.314     5.323    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/FSM_sequential_state_reg[1]_0
+    SLICE_X36Y96         LUT6 (Prop_lut6_I3_O)        0.124     5.447 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=30, routed)          0.797     6.244    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready_0
+    SLICE_X38Y94         LUT3 (Prop_lut3_I2_O)        0.124     6.368 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/next_pending_r_i_3/O
+                         net (fo=15, routed)          0.860     7.229    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/next
+    SLICE_X34Y93         LUT4 (Prop_lut4_I3_O)        0.124     7.353 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[3]_i_9/O
+                         net (fo=1, routed)           0.000     7.353    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3][1]
+    SLICE_X34Y93         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578     7.931 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/axaddr_incr_reg[3]_i_2/O[2]
+                         net (fo=1, routed)           0.432     8.362    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[2]
+    SLICE_X34Y94         LUT3 (Prop_lut3_I0_O)        0.301     8.663 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[2]_i_1/O
+                         net (fo=1, routed)           0.000     8.663    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/p_1_in[2]
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.480    22.659    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X34Y94         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[2]/C
+                         clock pessimism              0.229    22.888    
+                         clock uncertainty           -0.302    22.586    
+    SLICE_X34Y94         FDRE (Setup_fdre_C_D)        0.081    22.667    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[2]
+  -------------------------------------------------------------------
+                         required time                         22.667    
+                         arrival time                          -8.663    
+  -------------------------------------------------------------------
+                         slack                                 14.004    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[0]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[0]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[1]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[1]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[1]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[2]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[2]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[3]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[3]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[4]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[4]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[5]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[5]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[5]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+Slack (MET) :             14.028ns  (required time - arrival time)
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[6]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.164ns  (logic 1.610ns (31.177%)  route 3.554ns (68.823%))
+  Logic Levels:           2  (LUT4=2)
+  Clock Path Skew:        -0.099ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.703ns = ( 22.703 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.031ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.737     3.031    zed_firewall_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.365 r  zed_firewall_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=7, routed)           1.285     5.650    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_wvalid
+    SLICE_X32Y96         LUT4 (Prop_lut4_I3_O)        0.124     5.774 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[31]_i_2/O
+                         net (fo=16, routed)          1.794     7.568    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg_wren__0
+    SLICE_X29Y93         LUT4 (Prop_lut4_I0_O)        0.152     7.720 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1/O
+                         net (fo=8, routed)           0.475     8.195    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    21.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    21.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.524    22.703    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[6]/C
+                         clock pessimism              0.229    22.932    
+                         clock uncertainty           -0.302    22.630    
+    SLICE_X29Y92         FDRE (Setup_fdre_C_CE)      -0.407    22.223    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         22.223    
+                         arrival time                          -8.195    
+  -------------------------------------------------------------------
+                         slack                                 14.028    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.274ns  (logic 0.164ns (59.853%)  route 0.110ns (40.147%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.210ns
+    Source Clock Delay      (SCD):    0.912ns
+    Clock Pessimism Removal (CPR):    0.282ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.576     0.912    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X30Y96         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y96         FDRE (Prop_fdre_C_Q)         0.164     1.076 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[22]/Q
+                         net (fo=1, routed)           0.110     1.186    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[22]
+    SLICE_X30Y95         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.844     1.210    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X30Y95         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/CLK
+                         clock pessimism             -0.282     0.928    
+    SLICE_X30Y95         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.111    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.111    
+                         arrival time                           1.186    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.096ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.295ns  (logic 0.141ns (47.774%)  route 0.154ns (52.226%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.211ns
+    Source Clock Delay      (SCD):    0.913ns
+    Clock Pessimism Removal (CPR):    0.282ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.577     0.913    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y99         FDRE (Prop_fdre_C_Q)         0.141     1.054 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/Q
+                         net (fo=1, routed)           0.154     1.208    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[31]
+    SLICE_X30Y97         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.845     1.211    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X30Y97         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32/CLK
+                         clock pessimism             -0.282     0.929    
+    SLICE_X30Y97         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.112    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.112    
+                         arrival time                           1.208    
+  -------------------------------------------------------------------
+                         slack                                  0.096    
+
+Slack (MET) :             0.099ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg1_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.226ns (60.794%)  route 0.146ns (39.206%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.181ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.211ns
+    Source Clock Delay      (SCD):    0.995ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.659     0.995    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y101        FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg1_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y101        FDRE (Prop_fdre_C_Q)         0.128     1.123 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg1_reg[31]/Q
+                         net (fo=1, routed)           0.146     1.269    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg1[31]
+    SLICE_X29Y99         LUT6 (Prop_lut6_I0_O)        0.098     1.367 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata[31]_i_1/O
+                         net (fo=1, routed)           0.000     1.367    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/reg_data_out[31]
+    SLICE_X29Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.845     1.211    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]/C
+                         clock pessimism             -0.035     1.176    
+    SLICE_X29Y99         FDRE (Hold_fdre_C_D)         0.092     1.268    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.268    
+                         arrival time                           1.367    
+  -------------------------------------------------------------------
+                         slack                                  0.099    
+
+Slack (MET) :             0.099ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[24]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.371ns  (logic 0.186ns (50.095%)  route 0.185ns (49.905%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.181ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.211ns
+    Source Clock Delay      (SCD):    0.995ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.659     0.995    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y100        FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y100        FDRE (Prop_fdre_C_Q)         0.141     1.136 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2_reg[24]/Q
+                         net (fo=1, routed)           0.185     1.321    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg2[24]
+    SLICE_X28Y99         LUT6 (Prop_lut6_I5_O)        0.045     1.366 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata[24]_i_1/O
+                         net (fo=1, routed)           0.000     1.366    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/reg_data_out[24]
+    SLICE_X28Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.845     1.211    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[24]/C
+                         clock pessimism             -0.035     1.176    
+    SLICE_X28Y99         FDRE (Hold_fdre_C_D)         0.091     1.267    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[24]
+  -------------------------------------------------------------------
+                         required time                         -1.267    
+                         arrival time                           1.366    
+  -------------------------------------------------------------------
+                         slack                                  0.099    
+
+Slack (MET) :             0.100ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3_reg[30]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.373ns  (logic 0.226ns (60.604%)  route 0.147ns (39.396%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.181ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.211ns
+    Source Clock Delay      (SCD):    0.995ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.659     0.995    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y100        FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y100        FDRE (Prop_fdre_C_Q)         0.128     1.123 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3_reg[30]/Q
+                         net (fo=1, routed)           0.147     1.270    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/slv_reg3[30]
+    SLICE_X29Y99         LUT6 (Prop_lut6_I2_O)        0.098     1.368 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata[30]_i_1/O
+                         net (fo=1, routed)           0.000     1.368    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/reg_data_out[30]
+    SLICE_X29Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.845     1.211    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X29Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[30]/C
+                         clock pessimism             -0.035     1.176    
+    SLICE_X29Y99         FDRE (Hold_fdre_C_D)         0.092     1.268    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[30]
+  -------------------------------------------------------------------
+                         required time                         -1.268    
+                         arrival time                           1.368    
+  -------------------------------------------------------------------
+                         slack                                  0.100    
+
+Slack (MET) :             0.101ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.300ns  (logic 0.141ns (47.042%)  route 0.159ns (52.958%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.209ns
+    Source Clock Delay      (SCD):    0.911ns
+    Clock Pessimism Removal (CPR):    0.282ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.575     0.911    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y92         FDRE (Prop_fdre_C_Q)         0.141     1.052 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[6]/Q
+                         net (fo=1, routed)           0.159     1.210    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[6]
+    SLICE_X30Y91         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.843     1.209    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X30Y91         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/CLK
+                         clock pessimism             -0.282     0.927    
+    SLICE_X30Y91         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.110    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.110    
+                         arrival time                           1.210    
+  -------------------------------------------------------------------
+                         slack                                  0.101    
+
+Slack (MET) :             0.101ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.316ns  (logic 0.141ns (44.637%)  route 0.175ns (55.363%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.208ns
+    Source Clock Delay      (SCD):    0.912ns
+    Clock Pessimism Removal (CPR):    0.264ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.576     0.912    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y94         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y94         FDRE (Prop_fdre_C_Q)         0.141     1.053 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[8]/Q
+                         net (fo=1, routed)           0.175     1.227    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[8]
+    SLICE_X26Y92         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.842     1.208    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X26Y92         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/CLK
+                         clock pessimism             -0.264     0.944    
+    SLICE_X26Y92         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.127    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.127    
+                         arrival time                           1.227    
+  -------------------------------------------------------------------
+                         slack                                  0.101    
+
+Slack (MET) :             0.103ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.318ns  (logic 0.141ns (44.341%)  route 0.177ns (55.659%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.209ns
+    Source Clock Delay      (SCD):    0.913ns
+    Clock Pessimism Removal (CPR):    0.264ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.577     0.913    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.141     1.054 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[29]/Q
+                         net (fo=1, routed)           0.177     1.231    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[29]
+    SLICE_X26Y96         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.843     1.209    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X26Y96         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32/CLK
+                         clock pessimism             -0.264     0.945    
+    SLICE_X26Y96         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.128    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.128    
+                         arrival time                           1.231    
+  -------------------------------------------------------------------
+                         slack                                  0.103    
+
+Slack (MET) :             0.106ns  (arrival time - required time)
+  Source:                 zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.324ns  (logic 0.141ns (43.549%)  route 0.183ns (56.451%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.207ns
+    Source Clock Delay      (SCD):    0.908ns
+    Clock Pessimism Removal (CPR):    0.264ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.572     0.908    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X28Y84         FDRE                                         r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y84         FDRE (Prop_fdre_C_Q)         0.141     1.049 r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[3]/Q
+                         net (fo=1, routed)           0.183     1.231    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/in[4]
+    SLICE_X26Y89         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.841     1.207    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/aclk
+    SLICE_X26Y89         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/CLK
+                         clock pessimism             -0.264     0.943    
+    SLICE_X26Y89         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.126    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.126    
+                         arrival time                           1.231    
+  -------------------------------------------------------------------
+                         slack                                  0.106    
+
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.242ns  (logic 0.141ns (58.248%)  route 0.101ns (41.752%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.209ns
+    Source Clock Delay      (SCD):    0.911ns
+    Clock Pessimism Removal (CPR):    0.282ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.575     0.911    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y92         FDRE                                         r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y92         FDRE (Prop_fdre_C_Q)         0.141     1.052 r  zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[4]/Q
+                         net (fo=1, routed)           0.101     1.153    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[4]
+    SLICE_X30Y91         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.843     1.209    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X30Y91         SRLC32E                                      r  zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32/CLK
+                         clock pessimism             -0.282     0.927    
+    SLICE_X30Y91         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.115     1.042    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.042    
+                         arrival time                           1.153    
+  -------------------------------------------------------------------
+                         slack                                  0.111    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I       n/a            2.155         20.000      17.845     BUFGCTRL_X0Y16  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     FDSE/C       n/a            1.000         20.000      19.000     SLICE_X32Y97    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/aw_en_reg/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X28Y90    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X28Y90    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X28Y90    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_arready_reg/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X32Y96    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X32Y96    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_awaddr_reg[3]/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X32Y97    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_awready_reg/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X32Y97    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_bvalid_reg/C
+Min Period        n/a     FDRE/C       n/a            1.000         20.000      19.000     SLICE_X31Y91    zed_firewall_i/hardware_firewall_0/inst/hardware_firewall_v1_0_S00_AXI_inst/axi_rdata_reg[0]/C
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y90    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y90    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y91    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y91    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X26Y92    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X26Y92    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y90    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y90    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y91    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y91    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X26Y92    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X26Y92    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         10.000      9.020      SLICE_X30Y93    zed_firewall_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk_fpga_0
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.801ns  (logic 0.124ns (6.887%)  route 1.677ns (93.113%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.301ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=1, routed)           1.677     1.677    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/ext_reset_in
+    SLICE_X32Y102        LUT1 (Prop_lut1_I0_O)        0.124     1.801 r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
+                         net (fo=1, routed)           0.000     1.801    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/exr_d1
+    SLICE_X32Y102        FDRE                                         r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088     1.088    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         1.654     2.833    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
+    SLICE_X32Y102        FDRE                                         r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.697ns  (logic 0.045ns (6.460%)  route 0.652ns (93.540%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.301ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=1, routed)           0.652     0.652    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/ext_reset_in
+    SLICE_X32Y102        LUT1 (Prop_lut1_I0_O)        0.045     0.697 r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to_i_1/O
+                         net (fo=1, routed)           0.000     0.697    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/exr_d1
+    SLICE_X32Y102        FDRE                                         r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  zed_firewall_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    zed_firewall_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  zed_firewall_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=666, routed)         0.912     1.278    zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/slowest_sync_clk
+    SLICE_X32Y102        FDRE                                         r  zed_firewall_i/rst_ps7_0_50M/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/C
+
+
+
+
+
